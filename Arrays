@@ -1,0 +1,23 @@
+//Write a method that uses the selection sort algorithm to sort an input array of integers.
+//We can also perform this using Array.sort method
+
+
+public static int[] selectionSortArray(int[] arr){
+    
+int i;
+for(int j=0; j<arr.length-1;j++){
+ i=j;
+    for(int k=j+1; k<arr.length;k++){
+       if(arr[k]<arr[i]){         
+            i=k;
+        }
+    }
+
+    int temp= arr[j];
+    arr[j]=arr[i];
+    arr[i]= temp;
+}
+    return arr;
+}
+
+//please post if anyone can provide even more best answer than this.
